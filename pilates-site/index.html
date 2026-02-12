@@ -3,129 +3,114 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>UMER Style Pilates</title>
+  <title>Truly pilates | Academy</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- Header -->
   <header class="header" id="top">
     <div class="container header__inner">
       <nav class="nav nav--left" aria-label="Primary">
-        <a class="nav__link" href="#main">Main</a>
-        <a class="nav__link" href="#reserve">Reserve</a>
+        <a class="nav__link" href="#about">About</a>
         <a class="nav__link" href="#program">Program</a>
-        <a class="nav__link" href="#truly">Truly</a>
-        <a class="nav__link" href="#etc">etc</a>
+        <a class="nav__link" href="#truly">Curriculum</a>
+        <a class="nav__link" href="#reserve">Apply</a>
+        <a class="nav__link" href="#etc">Faculty</a>
       </nav>
 
       <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__title">P I L A T E S</span>
-        <span class="brand__sub">soft · minimal · precise</span>
+        <span class="brand__title">T R U L Y  P I L A T E S</span>
+        <span class="brand__sub">academy · clinical · precision</span>
       </a>
 
       <div class="header__right">
-        <button class="icon-btn" id="btnTop" type="button" title="맨 위로">
-          ↑
-        </button>
+        <button class="icon-btn" id="btnTop" type="button" title="맨 위로">↑</button>
       </div>
     </div>
   </header>
 
-  <!-- Main (Hero) -->
-  <main id="main" class="section section--hero">
+  <main id="about" class="section section--hero">
     <div class="hero">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container hero__content">
-        <p class="kicker">NEW</p>
-        <h1 class="hero__title">몸의 정렬을 바로잡고, 일상을 가볍게.</h1>
+        <p class="kicker">TRULY PILATES ACADEMY</p>
+        <h1 class="hero__title">최소한의 동작으로, 최대한의 정렬 변화를 설계합니다.</h1>
         <p class="hero__desc">
-          Silver · Kids · 산전&산후 프로그램을 목적/컨디션에 맞게 제안합니다.
+          Truly pilates는 해부학 기반 티칭과 케이스 분석을 통해
+          임상형 필라테스 지도자를 양성하는 아카데미입니다.
         </p>
         <div class="hero__cta">
-          <a class="btn" href="#program">프로그램 보기</a>
-          <a class="btn btn--ghost" href="#reserve">예약 확인/변경</a>
+          <a class="btn" href="#program">과정 살펴보기</a>
+          <a class="btn btn--ghost" href="#reserve">상담 신청</a>
         </div>
       </div>
     </div>
 
     <section class="container strip">
       <div class="strip__item">
-        <p class="strip__label">톤 & 무드</p>
-        <p class="strip__value">밝은 베이지 · 미니멀 · 여백 중심</p>
+        <p class="strip__label">FORMAT</p>
+        <p class="strip__value">이론 + 실습 + 케이스 피드백</p>
       </div>
       <div class="strip__item">
-        <p class="strip__label">운영</p>
-        <p class="strip__value">정적 사이트(Cloudflare Pages)</p>
+        <p class="strip__label">TARGET</p>
+        <p class="strip__value">현직 강사 · 트레이너 · 예비 지도자</p>
       </div>
       <div class="strip__item">
-        <p class="strip__label">문의</p>
-        <p class="strip__value">카카오 상담 버튼 제공</p>
+        <p class="strip__label">CERT TRACK</p>
+        <p class="strip__value">Core > Case Lab > Specialty</p>
       </div>
     </section>
   </main>
 
-  <!-- Program -->
   <section id="program" class="section">
     <div class="container">
       <div class="section__head">
         <h2 class="section__title">Program</h2>
-        <p class="section__desc">카드 클릭 → 상세(Truly) 연결</p>
+        <p class="section__desc">트랙 선택 후 Curriculum 상세 내용을 확인하세요.</p>
       </div>
 
       <div class="grid" id="programGrid" aria-live="polite"></div>
     </div>
   </section>
 
-  <!-- Truly (Program Detail) -->
   <section id="truly" class="section section--alt">
     <div class="container">
       <div class="section__head">
-        <h2 class="section__title">Truly</h2>
-        <p class="section__desc">선택한 프로그램의 효과/대상/주의사항/가격</p>
+        <h2 class="section__title">Curriculum</h2>
+        <p class="section__desc">효과 · 대상 · 주의사항 · 진행 구조를 한 번에 확인</p>
       </div>
 
       <div class="detail">
         <div class="detail__left">
           <div class="card card--sticky">
-            <p class="card__kicker">SELECTED</p>
-            <h3 class="card__title" id="detailTitle">프로그램을 선택하세요</h3>
-            <p class="card__muted" id="detailOneLiner">
-              Program 섹션에서 카드의 “자세히”를 눌러주세요.
-            </p>
+            <p class="card__kicker">SELECTED TRACK</p>
+            <h3 class="card__title" id="detailTitle">트랙을 선택하세요</h3>
+            <p class="card__muted" id="detailOneLiner">Program 섹션에서 트랙의 "자세히"를 눌러주세요.</p>
             <div class="divider"></div>
             <div class="price">
-              <span class="price__label">가격(예시)</span>
+              <span class="price__label">수강료(예시)</span>
               <span class="price__value" id="detailPrice">-</span>
             </div>
             <div class="price">
-              <span class="price__label">권장 빈도</span>
+              <span class="price__label">권장 수강 주기</span>
               <span class="price__value" id="detailFreq">-</span>
             </div>
             <div class="divider"></div>
-            <a class="btn btn--ghost w100" href="#reserve">예약 확인/변경으로 이동</a>
+            <a class="btn btn--ghost w100" href="#reserve">신청/상담으로 이동</a>
           </div>
         </div>
 
         <div class="detail__right">
           <div class="accordion" id="detailAccordion">
-            <button class="acc__btn" type="button" data-acc="effect">
-              효과 <span class="acc__icon">＋</span>
-            </button>
+            <button class="acc__btn" type="button" data-acc="effect">학습 효과 <span class="acc__icon">＋</span></button>
             <div class="acc__panel" data-panel="effect"></div>
 
-            <button class="acc__btn" type="button" data-acc="target">
-              대상 <span class="acc__icon">＋</span>
-            </button>
+            <button class="acc__btn" type="button" data-acc="target">추천 대상 <span class="acc__icon">＋</span></button>
             <div class="acc__panel" data-panel="target"></div>
 
-            <button class="acc__btn" type="button" data-acc="caution">
-              주의사항 <span class="acc__icon">＋</span>
-            </button>
+            <button class="acc__btn" type="button" data-acc="caution">수강 전 체크 <span class="acc__icon">＋</span></button>
             <div class="acc__panel" data-panel="caution"></div>
 
-            <button class="acc__btn" type="button" data-acc="guide">
-              진행 방식 <span class="acc__icon">＋</span>
-            </button>
+            <button class="acc__btn" type="button" data-acc="guide">진행 방식 <span class="acc__icon">＋</span></button>
             <div class="acc__panel" data-panel="guide"></div>
           </div>
         </div>
@@ -133,23 +118,21 @@
     </div>
   </section>
 
-  <!-- Reserve -->
   <section id="reserve" class="section">
     <div class="container">
       <div class="section__head">
-        <h2 class="section__title">Reserve</h2>
-        <p class="section__desc">예약 생성 없음 · 예약 확인 & 변경/취소 폼</p>
+        <h2 class="section__title">Apply</h2>
+        <p class="section__desc">접수 확인 · 일정 변경/취소 요청</p>
       </div>
 
       <div class="two-col">
-        <!-- Lookup -->
         <div class="card">
-          <h3 class="card__title">예약 확인</h3>
-          <p class="card__muted">예약번호 + 연락처(뒤 4자리)로 조회</p>
+          <h3 class="card__title">접수 확인</h3>
+          <p class="card__muted">접수번호 + 연락처(뒤 4자리)로 조회</p>
 
           <form id="lookupForm" class="form">
             <label class="field">
-              <span class="field__label">예약번호</span>
+              <span class="field__label">접수번호</span>
               <input class="field__input" name="code" placeholder="예) R-1029" required />
             </label>
 
@@ -162,13 +145,12 @@
           </form>
 
           <div class="result" id="lookupResult" aria-live="polite"></div>
-          <p class="hint">샘플 예약: R-1029 / 1234 또는 R-2031 / 7777</p>
+          <p class="hint">샘플 접수: R-1029 / 1234 또는 R-2031 / 7777</p>
         </div>
 
-        <!-- Change/Cancel -->
         <div class="card">
-          <h3 class="card__title">예약 변경 / 취소</h3>
-          <p class="card__muted">조회 후 입력 권장 · 폼 제출(접수) 방식</p>
+          <h3 class="card__title">일정 변경 / 취소</h3>
+          <p class="card__muted">조회 후 요청 접수 (데모)</p>
 
           <form id="changeForm" class="form">
             <label class="field">
@@ -180,7 +162,7 @@
             </label>
 
             <label class="field">
-              <span class="field__label">예약번호</span>
+              <span class="field__label">접수번호</span>
               <input class="field__input" name="code" placeholder="예) R-1029" required />
             </label>
 
@@ -202,7 +184,7 @@
 
             <label class="field">
               <span class="field__label">요청 내용</span>
-              <textarea class="field__input field__textarea" name="message" rows="5" placeholder="변경 사유/원하는 시간대/컨디션 등을 적어주세요." required></textarea>
+              <textarea class="field__input field__textarea" name="message" rows="5" placeholder="현재 지도 경력, 관심 과정, 변경 사유를 적어주세요." required></textarea>
             </label>
 
             <button class="btn w100" type="submit">요청 접수</button>
@@ -211,58 +193,57 @@
           <div class="result" id="changeResult" aria-live="polite"></div>
 
           <div class="kakao">
-            <p class="kakao__label">빠른 문의</p>
+            <p class="kakao__label">빠른 상담</p>
             <a class="btn btn--ghost w100" href="#" id="kakaoBtn" rel="noopener">카카오 상담하기</a>
-            <p class="hint">※ 카카오 링크는 추후 채널 URL로 교체</p>
+            <p class="hint">※ 카카오 채널 링크는 추후 실제 URL로 교체</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- etc -->
   <section id="etc" class="section section--alt">
     <div class="container">
       <div class="section__head">
-        <h2 class="section__title">etc</h2>
-        <p class="section__desc">강사 · 후기 · 위치/문의</p>
+        <h2 class="section__title">Faculty & Contact</h2>
+        <p class="section__desc">강사진 · 수강후기 · 위치/문의</p>
       </div>
 
       <div class="three">
         <div class="card">
-          <h3 class="card__title">강사</h3>
-          <p class="card__muted">대표강사 3인(예시)</p>
+          <h3 class="card__title">Faculty</h3>
+          <p class="card__muted">실전형 티칭 강사진</p>
           <ul class="list">
-            <li><b>Instructor A</b> · 체형교정/재활</li>
-            <li><b>Instructor B</b> · 산전·산후</li>
-            <li><b>Instructor C</b> · 키즈/성장</li>
+            <li><b>Director Yoon</b> · 임상 필라테스 / 정렬 교정</li>
+            <li><b>Master Kim</b> · 산전산후 / 호흡 리패턴</li>
+            <li><b>Educator Lee</b> · 키즈 / 기능해부학</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3 class="card__title">후기</h3>
-          <p class="card__muted">짧고 정갈한 톤</p>
+          <h3 class="card__title">Review</h3>
+          <p class="card__muted">수강생 피드백</p>
           <ul class="list">
-            <li>“허리 부담이 줄고 자세가 편해졌어요.”</li>
-            <li>“아이 자세/집중도가 좋아졌습니다.”</li>
-            <li>“산후 회복이 훨씬 수월했어요.”</li>
+            <li>"회원 케이스를 보는 관점이 달라졌어요."</li>
+            <li>"핸즈온과 큐잉을 실전에 바로 적용했습니다."</li>
+            <li>"수업 단가를 올릴 근거가 생겼습니다."</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3 class="card__title">위치/문의</h3>
-          <p class="card__muted">지도는 추후 임베드 가능</p>
+          <h3 class="card__title">Contact</h3>
+          <p class="card__muted">오프라인 스튜디오 안내</p>
           <div class="mini">
-            <p><b>주소</b> 서울시 ○○구 ○○로 00</p>
-            <p><b>운영</b> 평일 09:00–21:00 / 토 10:00–16:00</p>
-            <p><b>전화</b> 02-000-0000</p>
+            <p><b>주소</b> 서울시 강남구 테헤란로 00, Truly Center 4F</p>
+            <p><b>운영</b> 평일 09:00-21:00 / 토 10:00-16:00</p>
+            <p><b>문의</b> 02-000-0000 / trulypilates.academy@email.com</p>
           </div>
         </div>
       </div>
 
       <footer class="footer">
-        <p>© PILATES · All rights reserved.</p>
-        <p class="footer__muted">Static HTML/CSS/JS · Deploy on Cloudflare Pages</p>
+        <p>© Truly pilates. All rights reserved.</p>
+        <p class="footer__muted">Static HTML/CSS/JS · Deploy on Cloudflare</p>
       </footer>
     </div>
   </section>

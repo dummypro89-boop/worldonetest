@@ -28,7 +28,7 @@ btnTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smoo
 // 카카오 버튼: 나중에 실제 채널 URL로 교체
 document.getElementById("kakaoBtn").addEventListener("click", (e) => {
   e.preventDefault();
-  alert("카카오 채널 링크를 연결해주세요. (index.html에서 #kakaoBtn href 교체)");
+  alert("Truly pilates 카카오 채널 링크를 연결해주세요. (#kakaoBtn href 교체)");
 });
 
 // Program Grid Render
@@ -182,3 +182,6 @@ function escapeHtml(str){
 
 // init
 renderPrograms();
+if (data.programs.length > 0) {
+  pickProgram(data.programs[0].id);
+}
