@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Pilates Teaching Scene</title>
+  <desc id="desc">Soft-tone illustration representing pilates teaching.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efe6db"/>
+      <stop offset="100%" stop-color="#d8c5b1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <ellipse cx="800" cy="740" rx="580" ry="120" fill="#c4af98" opacity="0.35"/>
+  <rect x="450" y="620" width="700" height="40" rx="20" fill="#a7886b"/>
+  <circle cx="620" cy="430" r="55" fill="#8e6f54"/>
+  <rect x="570" y="490" width="110" height="170" rx="55" fill="#7d5f47"/>
+  <rect x="530" y="530" width="70" height="30" rx="15" fill="#7d5f47" transform="rotate(-25 530 530)"/>
+  <rect x="675" y="525" width="85" height="28" rx="14" fill="#7d5f47" transform="rotate(15 675 525)"/>
+  <rect x="560" y="650" width="58" height="120" rx="25" fill="#7d5f47" transform="rotate(8 560 650)"/>
+  <rect x="630" y="648" width="58" height="124" rx="25" fill="#7d5f47" transform="rotate(-8 630 648)"/>
+  <circle cx="920" cy="420" r="50" fill="#9a7a5d"/>
+  <rect x="875" y="475" width="95" height="165" rx="47" fill="#8b6b51"/>
+  <rect x="825" y="520" width="72" height="26" rx="13" fill="#8b6b51" transform="rotate(-32 825 520)"/>
+  <rect x="958" y="522" width="96" height="26" rx="13" fill="#8b6b51" transform="rotate(22 958 522)"/>
+  <rect x="872" y="640" width="52" height="118" rx="24" fill="#8b6b51" transform="rotate(10 872 640)"/>
+  <rect x="930" y="640" width="52" height="118" rx="24" fill="#8b6b51" transform="rotate(-10 930 640)"/>
+  <text x="95" y="120" font-family="Arial, sans-serif" font-size="48" letter-spacing="6" fill="#564434" opacity="0.7">TRULY PILATES</text>
+</svg>
