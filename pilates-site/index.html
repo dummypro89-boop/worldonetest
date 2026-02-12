@@ -11,9 +11,6 @@
     <div class="container header__inner">
       <nav class="nav nav--left" aria-label="Primary">
         <a class="nav__link" href="#about">About</a>
-        <a class="nav__link" href="#program">Program</a>
-        <a class="nav__link" href="#truly">Curriculum</a>
-        <a class="nav__link" href="#reserve">Apply</a>
         <a class="nav__link" href="#etc">Faculty</a>
       </nav>
 
@@ -34,147 +31,6 @@
       <article class="landing__photo landing__photo--right" data-enter></article>
     </section>
   </main>
-
-  <section id="program" class="section reveal-after">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Program</h2>
-        <p class="section__desc">트랙 선택 후 Curriculum 상세 내용을 확인하세요.</p>
-      </div>
-
-      <div class="grid" id="programGrid" aria-live="polite"></div>
-    </div>
-  </section>
-
-  <section id="truly" class="section section--alt reveal-after">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Curriculum</h2>
-        <p class="section__desc">효과 · 대상 · 주의사항 · 진행 구조를 한 번에 확인</p>
-      </div>
-
-      <div class="detail">
-        <div class="detail__left">
-          <div class="card card--sticky">
-            <p class="card__kicker">SELECTED TRACK</p>
-            <h3 class="card__title" id="detailTitle">트랙을 선택하세요</h3>
-            <p class="card__muted" id="detailOneLiner">Program 섹션에서 트랙의 "자세히"를 눌러주세요.</p>
-            <div class="divider"></div>
-            <div class="price">
-              <span class="price__label">수강료(예시)</span>
-              <span class="price__value" id="detailPrice">-</span>
-            </div>
-            <div class="price">
-              <span class="price__label">권장 수강 주기</span>
-              <span class="price__value" id="detailFreq">-</span>
-            </div>
-            <div class="divider"></div>
-            <a class="btn btn--ghost w100" href="#reserve">신청/상담으로 이동</a>
-          </div>
-        </div>
-
-        <div class="detail__right">
-          <div class="accordion" id="detailAccordion">
-            <button class="acc__btn" type="button" data-acc="effect">학습 효과 <span class="acc__icon">＋</span></button>
-            <div class="acc__panel" data-panel="effect"></div>
-
-            <button class="acc__btn" type="button" data-acc="target">추천 대상 <span class="acc__icon">＋</span></button>
-            <div class="acc__panel" data-panel="target"></div>
-
-            <button class="acc__btn" type="button" data-acc="caution">수강 전 체크 <span class="acc__icon">＋</span></button>
-            <div class="acc__panel" data-panel="caution"></div>
-
-            <button class="acc__btn" type="button" data-acc="guide">진행 방식 <span class="acc__icon">＋</span></button>
-            <div class="acc__panel" data-panel="guide"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reserve" class="section reveal-after">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Apply</h2>
-        <p class="section__desc">접수 확인 · 일정 변경/취소 요청</p>
-      </div>
-
-      <div class="two-col">
-        <div class="card">
-          <h3 class="card__title">접수 확인</h3>
-          <p class="card__muted">접수번호 + 연락처(뒤 4자리)로 조회</p>
-
-          <form id="lookupForm" class="form">
-            <label class="field">
-              <span class="field__label">접수번호</span>
-              <input class="field__input" name="code" placeholder="예) R-1029" required />
-            </label>
-
-            <label class="field">
-              <span class="field__label">연락처(뒤 4자리)</span>
-              <input class="field__input" name="phone4" placeholder="예) 1234" inputmode="numeric" pattern="\\d{4}" required />
-            </label>
-
-            <button class="btn w100" type="submit">조회</button>
-          </form>
-
-          <div class="result" id="lookupResult" aria-live="polite"></div>
-          <p class="hint">샘플 접수: R-1029 / 1234 또는 R-2031 / 7777</p>
-        </div>
-
-        <div class="card">
-          <h3 class="card__title">일정 변경 / 취소</h3>
-          <p class="card__muted">조회 후 요청 접수 (데모)</p>
-
-          <form id="changeForm" class="form">
-            <label class="field">
-              <span class="field__label">유형</span>
-              <select class="field__input" name="type" id="changeType" required>
-                <option value="change">변경</option>
-                <option value="cancel">취소</option>
-              </select>
-            </label>
-
-            <label class="field">
-              <span class="field__label">접수번호</span>
-              <input class="field__input" name="code" placeholder="예) R-1029" required />
-            </label>
-
-            <label class="field">
-              <span class="field__label">연락처</span>
-              <input class="field__input" name="phone" placeholder="예) 010-1234-5678" required />
-            </label>
-
-            <div class="row" id="changeFields">
-              <label class="field">
-                <span class="field__label">희망 날짜</span>
-                <input class="field__input" type="date" name="date" />
-              </label>
-              <label class="field">
-                <span class="field__label">희망 시간</span>
-                <input class="field__input" type="time" name="time" />
-              </label>
-            </div>
-
-            <label class="field">
-              <span class="field__label">요청 내용</span>
-              <textarea class="field__input field__textarea" name="message" rows="5" placeholder="현재 지도 경력, 관심 과정, 변경 사유를 적어주세요." required></textarea>
-            </label>
-
-            <button class="btn w100" type="submit">요청 접수</button>
-          </form>
-
-          <div class="result" id="changeResult" aria-live="polite"></div>
-
-          <div class="kakao">
-            <p class="kakao__label">빠른 상담</p>
-            <a class="btn btn--ghost w100" href="#" id="kakaoBtn" rel="noopener">카카오 상담하기</a>
-            <p class="hint">※ 카카오 채널 링크는 추후 실제 URL로 교체</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section id="etc" class="section section--alt reveal-after">
     <div class="container">
@@ -222,7 +78,6 @@
     </div>
   </section>
 
-  <script src="./data.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>
