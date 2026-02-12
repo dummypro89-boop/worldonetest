@@ -24,6 +24,32 @@ const changeFields = document.getElementById("changeFields");
 
 const btnTop = document.getElementById("btnTop");
 btnTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+const navLinks = document.querySelectorAll(".nav__link");
+const landingPhotos = document.querySelectorAll("[data-enter]");
+
+landingPhotos.forEach((photo) => {
+  photo.addEventListener("click", () => {
+    document.body.classList.remove("is-landing");
+    const firstSection = document.querySelector("#program");
+    if (firstSection) firstSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const hash = link.getAttribute("href");
+    if (!hash || !hash.startsWith("#")) return;
+
+    if (document.body.classList.contains("is-landing")) {
+      e.preventDefault();
+      document.body.classList.remove("is-landing");
+      requestAnimationFrame(() => {
+        const target = document.querySelector(hash);
+        if (target) target.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  });
+});
 
 // 카카오 버튼: 나중에 실제 채널 URL로 교체
 document.getElementById("kakaoBtn").addEventListener("click", (e) => {
@@ -184,4 +210,7 @@ function escapeHtml(str){
 renderPrograms();
 if (data.programs.length > 0) {
   pickProgram(data.programs[0].id);
+}
+if (window.location.hash && window.location.hash !== "#top" && window.location.hash !== "#about") {
+  document.body.classList.remove("is-landing");
 }
