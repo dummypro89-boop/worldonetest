@@ -128,7 +128,7 @@ a{color:inherit;text-decoration:none}
 .about-copy__lead{
   margin:0 auto;
   max-width:900px;
-  font-size:41px;
+  font-size:37px;
   line-height:1.3;
   letter-spacing:-.01em;
   word-break:keep-all;
@@ -341,7 +341,7 @@ a{color:inherit;text-decoration:none}
   .landing{min-height:calc(100vh - 64px)}
   .landing__photo{min-height:0}
   .about-copy{min-height:70vh}
-  .about-copy__lead{font-size:29px}
+  .about-copy__lead{font-size:25px}
   .about-copy__sub{font-size:16px}
   .grid{grid-template-columns:1fr 1fr}
   .strip{grid-template-columns:1fr}
